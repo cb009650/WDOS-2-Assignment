@@ -117,5 +117,15 @@ function updateCart() {
     
 }
 
-
-// idk??
+function Apass() {
+    if (document.getElementById("Annualyes").checked) {
+       document.getElementById("timetaken").disabled = true;
+       document.getElementById("foodyes").disabled = true;
+       document.getElementById("foodno").disabled = true;
+    }
+    else{
+        document.getElementById("timetaken").disabled = false;
+        document.getElementById("foodyes").disabled = false;
+        document.getElementById("foodno").disabled = false;
+    }
+}

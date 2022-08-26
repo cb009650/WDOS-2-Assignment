@@ -136,10 +136,10 @@
             <div class="buyTickets">
 
                 <div class="buyTicket">
-                    <span class="buyTicket-title">Foreign Babys Pass - 3 Yrs or younger</span>
+                    <span class="buyTicket-title">Annual Pass - Foreign</span>
                     <img class="buyTicket-image" src="Images/Activity-Forms1.png" alt="Annual Foreigns tickets">
                     <div class="buyTicket-details">
-                        <span class="buyTicket-price">0 LKR</span>
+                        <span class="buyTicket-price">15000 LKR</span>
                         <button class="btn btn-primary addButton" type="button">ADD TO CART</button>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                     <img class="buyTicket-image" src="Images/Activity-Forms1.png" alt="Foreign Child tickets">
                     <div class="buyTicket-details">
                         <span class="buyTicket-price">2500 LKR</span>
-                        <button class="btn btn-primary addButton"type="button">ADD TO CART</button>
+                        <button class="btn btn-primary addButton" type="button">ADD TO CART</button>
                     </div>
                 </div>
 
@@ -163,10 +163,10 @@
                 </div>
 
                 <div class="buyTicket">
-                    <span class="buyTicket-title">Local Babys Pass - 3 Yrs or younger</span>
+                    <span class="buyTicket-title">Annual Pass - Local</span>
                     <img class="buyTicket-image" src="Images/Activity-Forms2.png" alt="Local Adult tickets">
                     <div class="buyTicket-details">
-                        <span class="buyTicket-price">0 LKR</span>
+                        <span class="buyTicket-price">4500 LKR</span>
                         <button class="btn btn-primary addButton" type="button">ADD TO CART</button>
                     </div>
                 </div>
@@ -192,55 +192,46 @@
         </section>
 
         <form>
-            <fieldset>
-                <legend>Annual Pass</legend>
-
-                <label for="Annualyes">YES</label>
-                <input type="radio" id="Annualyes" value="yes">
-
-                <label for="Annualno">NO</label>
-                <input type="radio" id="Annualno" value="no">
-
-            </fieldset>
-
-            <fieldset>
-                <legend>Duration</legend>
-
-                <label for="durations">Duration</label>
-                <select id="durations"name="timetaken">
-                    <option value="3hours">3 Hours</option>
-                    <option value="1/2day">1/2 Day</option>
-                    <option value="1day">Full Day</option>
-                    <option value="2day">2 Days</option>
-                </select>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>Food Token</legend>
-
-                <label for="foodyes">YES</label>
-                <input type="radio" id="foodyes" name="foodToken" value="yes">
-
-                <label for="foodno">N0</label>
-                <input type="radio" id="foodyes" name="foodToken" value="no">
-
-            </fieldset>
-
-            <p id="currentorder"></p>
-
-            <input type="button" id="addtoOrder" value="Add To Order">
-            <input type="button" id="addfav" value="Add To Favourite">
-
-            <p id="overallOrder"></p>
-            <input type="button" id="placeorder" value="Place Order">
-            <input type="button" id="orderfav" value="Order Favourite">
-
-
+            <div class="donatecontainer">
+                <p>
+                    Children under the age of 3 have free access, further once users select the items purchase it from the selection below.
+                </p>
+                <fieldset>
+                    <legend>Annual Pass</legend>
+    
+                    <label for="Annualyes">YES</label>
+                    <input type="radio" id="Annualyes" value="yes" name="annpass" onchange="Apass()">
+    
+                    <label for="Annualno">NO</label>
+                    <input type="radio" id="Annualno" value="no" name="annpass">
+    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Duration</legend>
+                    <label for="timetaken">Duration</label>
+                    <select id="timetaken" name="Duration of activity">
+                        <option value="3hours">3 Hours</option>
+                        <option value="1/2day">1/2 Day</option>
+                        <option value="oneday">Full Day</option>
+                        <option value="twodays">2 Days</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Food Token</legend>
+                    
+                    <label for="foodyes">YES</label>
+                    <input type="radio" id="foodyes" name="foodToken" value="yes">
+                    
+                    <label for="foodno">N0</label>
+                    <input type="radio" id="foodno" name="foodToken" value="no">
+                </fieldset>
+            </div>
         </form>
 
         <section>
-            <h2 class="tickets-header">Duration Of Stay</h2>
+            <h2 class="tickets-header">Others</h2>
             
             <div class="buyTickets">
                 <div class="buyTicket">
@@ -291,6 +282,22 @@
                         <button class="btn btn-primary addButton" type="button">ADD TO CART</button>
                     </div>
                 </div>
+                <div class="buyTicket">
+                    <span class="buyTicket-title">Foreigners 2 days</span>
+                    <img class="buyTicket-image" src="Images/Activity-Forms4.jpg" alt="Foreigners two day pass">
+                    <div class="buyTicket-details">
+                        <span class="buyTicket-price">2000 LKR</span>
+                        <button class="btn btn-primary addButton" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="buyTicket">
+                    <span class="buyTicket-title">Locals 2 days</span>
+                    <img class="buyTicket-image" src="Images/Activity-Forms4.jpg" alt="Locals two day pass">
+                    <div class="buyTicket-details">
+                        <span class="buyTicket-price">1000 LKR</span>
+                        <button class="btn btn-primary addButton" type="button">ADD TO CART</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="tickets-container">
@@ -307,7 +314,7 @@
                 <strong class="cart-total-title">Total</strong>
                 <span class="final-cart-price">O LKR</span>
             </div>
-            <button class="btn btn-primary purchaseButton" type="button">PURCHASE</button>
+            <button class="btn btn-primary purchaseButton" type="button" name="mainbtn">PURCHASE</button>
         </section>
 
         <script src="main.js"></script>
