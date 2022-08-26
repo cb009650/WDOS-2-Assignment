@@ -1,0 +1,16 @@
+{
+  "name": "Travel Sri Lanka",
+  "short_name":"Travel SL",
+  "start_url":"/index.html",
+  "display":"standalone",
+  "background_color":"rgb(63, 63, 63",
+  "theme_color":"rgb(94, 94, 94",
+  "orientatation":"portrait-primary",
+  "icons":[
+    {
+      "src":"/Images/icon(515X300).png",
+      "type":"image/png",
+      "sizes":"515x300"
+    }
+  ]
+}

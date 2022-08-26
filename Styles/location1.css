@@ -1,0 +1,37 @@
+p{
+    font-size: 20px;
+    color: black;
+}
+.section{
+    background: rgba(133, 129, 129, 0.8); opacity: 100%;
+    padding: 2em;
+}
+.div {
+    border: 3px solid #317c34;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: rgb(165, 165, 165);
+}
+.img {
+    float:left ;
+    width: 300px;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;  
+}
+
+.image-fade {
+    animation: fadeIn 10s;
+}
+.image-fade:hover{
+    transform: translate(300px, 0px);
+    /*-webkit-transform: translate(50px,100px); /*  for older webkit browsers and mobile browsers*/    
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

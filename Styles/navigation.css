@@ -1,0 +1,150 @@
+/*CSS styling used for the Navigation Panel*/
+
+:root{
+    --black: black;
+    --DarkGreen: #0c9543;
+}
+span{
+    color: #ffffff;
+}
+h3{
+    font-size: 30px;
+    color: var(--DarkGreen);
+}
+ul{
+    width: auto;
+    float: right;
+    margin-top: 8px;
+}
+.li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+.Site-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+.Nav-links li{
+    list-style: none;
+}
+
+.Nav-links li a{
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+    display: block;
+}
+
+.Nav-links li:hover{
+    background-color: #0bd25b;
+}
+
+@media(max-width:600px) {
+    
+    .Nav-links{
+        display: flex;
+        width: 100%;
+    }
+    .Site-title{
+        align-items: center;
+    }
+    .Nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Nav-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .Nav-links li{
+        text-align: center;
+    }
+    .Nav-links li a{
+        padding: .5rem 1rem;
+    }
+}
+
+/*CSS styling used for the Footer*/
+
+
+footer{
+    position: relative;
+    background: rgb(52, 51, 51);
+    height: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 20px;
+    color: #fff;
+}
+.fcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.fcontent p{
+    max-width: 500px;
+    line-height: 30px;
+    margin: 5px auto;
+    font-size: 20px;
+    color: #ffffff;
+}
+.fcontent h3{
+    font-size: 2.1rem;
+    line-height: 2rem;
+}
+
+.fbottom{
+    background: rgb(30, 30, 30);
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+.fbottom p{
+    float: left;
+    font-size: 16px;
+    word-spacing: 3px;
+    color: white;
+}
+.fbottom p a{
+  color:#ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.fmenu{
+  float: right;
+}
+.fmenu ul{
+  display: flex;
+}
+.fmenu ul li{
+padding-right: 18px;
+display: block;
+}
+.fmenu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.fmenu ul li a:hover{
+  color: #108700;
+}
+
+@media (max-width:500px) {
+.fmenu ul{
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+}

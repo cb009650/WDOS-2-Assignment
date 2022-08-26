@@ -1,0 +1,480 @@
+:root{
+    --black: black;
+    --DarkGreen: #0a7534;
+}
+*{
+    box-sizing: border-box;
+}
+.container {
+    position: sticky;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body,html{
+    margin: 1px;
+    padding: 0px;
+}
+h1{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--DarkGreen);
+}
+
+h3{
+    font-size: 30px;
+    color: var(--DarkGreen);
+}
+.center{
+    text-align: center;    
+}
+p{
+    font-size: 20px;
+    color: var(--black);
+}
+.pad{
+    padding: 15px;
+}
+.box {
+    margin: 1em;
+    background-color:rgb(255, 255, 255);
+    font-size: 1em;
+}
+ #boxContainer {
+    background-color:#ffffff;
+    padding: 5em;
+    margin: 1em;
+    grid-template-columns:repeat(2,600px);
+    grid-template-rows: repeat(3,200px) 400px auto;
+    display: grid;
+}
+#wildlifeContainer {
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 1px;
+}
+.Wildbox {
+    background: rgba(133, 129, 129, 0.8); opacity: 100%;
+    border: 3px solid var(--DarkGreen);
+    padding: 1em;
+    margin: 50px;
+    color: var(--black);
+}
+.columnpic{
+    flex: 40.33%;
+    padding: 5px;
+}
+.rowpic{
+    display: flex;
+}
+table{
+    border-collapse:collapse ;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+.tr{
+    background-color: #a7a6a6;
+}
+
+#beachpage{
+    margin: 0 auto;
+    min-width: 860px;
+    max-width: 1260px;
+    width: 95%;
+    background: #0c9543;
+    color: #ffffff;
+}
+.section{
+    background: rgba(133, 129, 129, 0.8); opacity: 100%;
+    border: 2px solid black;
+    padding: 1em;
+    margin: 5px;
+    color:var(--black);
+}
+
+article{
+    background-color:white;
+    border: black solid thin;
+    margin: 5px;
+    padding: 10px;
+}
+.bigimage{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+#activitiespage{
+    margin: 0 auto;
+    min-width: 860px;
+    max-width: 1260px;
+    width: 95%;
+    color: #ffffff;
+}
+#hotel{
+    float: left;
+    padding: 10px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+.flex-item-1 {
+    background-color: rgb(151, 150, 150);;
+    padding: 10px;
+    flex: 20%;
+    text-align: left;    
+}
+
+@media (max-width: 600px) {
+    .flex-item-1{
+      flex: 100%;
+    }
+}
+.button {
+    background-color: var(--DarkGreen);  
+    cursor: pointer;  
+    color: whitesmoke;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+  
+.button {
+    background-color: whitesmoke; 
+    color: black; 
+    border: 2px solid var(--DarkGreen);
+}
+  
+.button:hover {
+    background-color: var(--DarkGreen);
+    color: whitesmoke;
+}
+
+/*Styling used for the purchase and donations page*/
+
+div.purchase{
+    border: 2px solid var(--DarkGreen);
+    background: white;
+}
+div.purchase :hover{
+    border: none;
+    background-color: var(--DarkGreen);
+    color: whitesmoke;
+}
+div.purchase img{
+    width: 100%;
+    height: 200px;
+}
+div.description {
+    text-align: left;
+    padding: 5%;
+}
+.resp{
+    padding: 15px 6px;
+    width: 25%;
+    float: left;
+}
+@media only screen and (max-width: 700px){
+    .resp{
+        margin: 7px 0;
+        width: 49%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .resp{
+        width: 100%;
+    }
+}
+
+/*WDOS-2 Assignment*/
+
+.donaterow{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+} 
+
+.col-50 {
+    -ms-flex: 50%;
+    flex: 50%;
+    padding: 0 16px;
+}  
+.col-75 {
+    -ms-flex: 75%;
+    flex: 75%;
+    padding: 0 16px;
+}   
+.donatecontainer {
+    background-color: #aaa6a6;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;    
+    border-radius: 3px;
+}   
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+select{
+    background-color: #ffffff;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+}  
+.butt {
+    background: rgb(82, 82, 82);
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;    
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+}
+    
+.butt:hover {
+    background-color: #1c7e28;
+}
+    
+    
+@media (max-width: 800px) {
+    .donaterow {
+        flex-direction: column-reverse;
+    }
+}
+
+/*Donation form Popup message WDOS-2*/
+ 
+.message{
+    visibility: hidden;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 400px;
+    text-align: center;
+    padding: 0 30px 30px;
+    border-radius: 5px;
+    transition: transfrom 0.5s, top 0.5s;
+}
+.open-message{
+    visibility: visible;
+    top: 200%;
+    transform: translate(-50%, -50%) scale(1);
+}
+  
+.message img{
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.message h2{
+    font-weight: 500;
+    font-size: 38px;
+    margin: 30px 0 10px;
+    
+}
+.message button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #408726;
+    color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Activities Page WDOS-2*/
+
+.tickets-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.tickets-header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.btn {
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    color: white;
+    background-color: #1a6411;
+    border-radius: .4em;
+    border-color: #1a6411;
+    cursor: pointer;
+    padding: .65em .65em;
+}
+
+.btn:hover {
+    border-color: white;
+    background-color: #282828;
+}
+
+.buyTicket {
+    margin: 30px;
+}
+
+.buyTicket-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.buyTicket-image {
+    height: 250px;
+}
+
+.buyTicket-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.buyTicket-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.buyTickets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartHeading {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cartCol {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cartRows {
+    display: flex;
+}
+
+.cart {
+    width: 45%;
+}
+
+.cart-cost {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cartQtity {
+    width: 35%;
+}
+
+.cart-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.delete {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.delete:hover {
+    background-color: #CC4C4C;
+}
+
+.cartQInput {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #1bc8c2;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cartRows:last-child {
+    border-bottom: 1px solid black;
+}
+.cartRows:last-child .cartCol {
+    border: none;
+}
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.final-cart-price {
+    color: #333;
+    font-size: 1.1em;
+}
+.purchaseButton {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
